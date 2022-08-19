@@ -1,0 +1,27 @@
+cmake_minimum_required(VERSION 3.22.2)
+project(lib_05_dll)
+add_library(multu_dll SHARED 
+multi_class_Equilateral_triangle.h
+multi_class_Equilateral_triangle.cpp
+multi_class_Firure.h
+multi_class_Firure.cpp
+multi_class_Isosceles_triangle.h
+multi_class_Isosceles_triangle.cpp
+multi_class_Parallelogram.h
+multi_class_Parallelogram.cpp
+multi_class_Quadrilateral.h
+multi_class_Quadrilateral.cpp
+multi_class_Rectangle.h
+multi_class_Rectangle.cpp
+multi_class_Rhombus.h
+multi_class_Rhombus.cpp
+multi_class_Right_triangle.h
+multi_class_Right_triangle.cpp
+multi_class_Square.h
+multi_class_Square.cpp
+multi_class_triangle.h
+multi_class_triangle.cpp
+multi_header.h
+)
+add_executable(multiEXE multi_lib_main.cpp)
+target_link_libraries(multiEXE multu_dll)
